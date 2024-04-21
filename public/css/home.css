@@ -1,0 +1,431 @@
+.tos {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, .7);
+    color: #fff;
+    padding: 8px 10px;
+    font-size: 16px
+}
+
+.blind_box_pay_header {
+    width: 100vw;
+    font-size: 19px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px;
+    box-sizing: border-box
+}
+
+.blind_box_pay_header img {
+    width: 70px;
+    margin-right: 8px
+}
+
+.timeout {
+    width: .6rem;
+    height: .4rem;
+    line-height: .4rem;
+    font-size: .3rem;
+    text-align: center
+}
+
+.timeout_minutes,
+.timeout_second {
+    color: #fd2525
+}
+
+.lock_message1 {
+    margin: 0;
+    color: #000;
+    font-size: .36rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: .06rem
+}
+
+.lock_message1-amend {
+    font-size: .2rem;
+    font-weight: 400;
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding-top: 0;
+    margin-bottom: .1rem
+}
+
+.lock_message2 {
+    color: #fd2525;
+    text-align: center;
+    font-size: .28rem;
+    line-height: .28rem;
+    margin: .15rem 0 0 0;
+    font-weight: 550
+}
+
+.pay_title {
+    color: #000;
+    font-weight: 700;
+    font-size: .3rem;
+    line-height: .8rem
+}
+
+.pay_phone_money {
+    position: relative;
+    top: -.35rem;
+    margin: .4rem .16rem 0;
+    background: #fff;
+    border-radius: .2rem;
+    padding: .3rem .28rem
+}
+
+.pay_phone_money_item {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px
+}
+
+.type_title {
+    font-size: .38rem;
+    background: #f6fcff;
+    border-radius: 3px;
+    font-weight: 700;
+    color: #555;
+    margin: .33rem 0 .15rem
+}
+
+.pay_phone_money_price {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 17px 0 5px;
+    align-items: flex-start;
+    flex-wrap: wrap
+}
+
+.pay_button {
+    width: 90%;
+    border: none !important;
+    background-color: #fff0 !important;
+    font-size: .4rem !important;
+    letter-spacing: .1rem !important;
+    color: white !important;
+}
+
+.pay_phone_money_price_item {
+    width: calc(33% - .16rem);
+    height: 1.62rem;
+    background: #ffc40018;
+    border-radius: .2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #050505;
+    margin-bottom: .3rem
+}
+
+.pay_phone_money_price_item .orign_price p {
+    font-size: .6rem;
+    text-align: center;
+    color: red;
+    font-weight: 700;
+    margin-top: .16rem;
+    display: inline;
+}
+
+.pay_phone_money_price_item .orign_price p :after {
+    content: "元";
+    font-size: .3rem
+}
+
+.pay_phone_money_price_item .orign_price span {
+    color: red;
+    padding-left: 2px;
+}
+
+.type_active {
+    background: #ffc400;
+    color: #fff;
+    position: relative;
+    overflow: hidden
+}
+
+.pay_phone_money_price_item.type_active {
+    background: #ffc400
+}
+
+.pay_phone_money_price_item.type_active .orign_price p {
+    color: red
+}
+
+.pay_phone_money_price_item .price {
+    font-size: .2rem;
+    line-height: 19px;
+    color: red;
+    margin-top: .18rem;
+    text-align: center;
+}
+
+.choose_price_item .right_bottom_img,
+.choose_price_item .top_img {
+    display: block !important
+}
+
+.pay_phone_number {
+    display: flex;
+    position: relative;
+    margin-top: .2rem;
+    padding-bottom: .08rem;
+    border-bottom: .02rem solid hsla(0, 0%, 45%, .15)
+}
+
+.pay_phone_number input {
+    display: flex;
+    border: 0;
+    width: 100%;
+    height: .5rem;
+    font-size: .46rem;
+    color: #000;
+    font-weight: 700;
+}
+
+.change_phone_number {
+    position: absolute !important;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    font-size: 15px
+}
+
+.pay_phone_number_button {
+    animation: myanimation-148daba7 1s infinite;
+    font-weight: 700;
+    line-height: 1;
+    background: linear-gradient(90deg, #ffc400, #f1ba02);
+    color: #fff;
+    text-align: center;
+    border-radius: 20rem;
+    padding: 16px 0;
+    font-size: .4rem;
+    width: 90%;
+    margin: 0.2rem auto;
+    cursor: pointer;
+    letter-spacing: .1rem;
+    height: 26px;
+}
+
+.pay_phone_number_tips {
+    background: red;
+    color: #fff;
+    border-radius: .5rem .5rem .5rem 0;
+    position: absolute;
+    right: 0;
+    top: -.2rem;
+    font-size: .32rem;
+    letter-spacing: 0;
+    padding: .1rem .1rem
+}
+
+@keyframes myanimation-148daba7 {
+    0% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(1.1)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+.read_message_xiaoxiang_area input {
+    margin-right: 5px
+}
+
+.read_message_xiaoxiang_area span {
+    color: #ffd39f
+}
+
+.read_message_xiaoxiang_area a {
+    color: #9c3fef
+}
+
+.blind_box_out img,
+.blind_box_refuse img {
+    margin: 0 auto;
+    margin-bottom: 2px;
+    width: 60%
+}
+
+.rightInfo {
+    position: fixed;
+    right: 0;
+    top: .2rem
+}
+
+.rightInfo a {
+    background: rgba(0, 0, 0, .5);
+    border-radius: 5vw 0 0 5vw;
+    height: .5rem;
+    color: #fff;
+    line-height: .5rem;
+    text-align: center;
+    font-size: .2rem;
+    cursor: pointer;
+    min-width: .84rem;
+    display: block;
+    margin-top: .4rem
+}
+
+.payRow {
+    padding: .34rem 0 .26rem 0
+}
+
+.payType {
+    margin-top: .4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.payLeft {
+    flex: 1;
+    display: flex;
+    align-items: center
+}
+
+.payIcon {
+    width: .4rem;
+    height: .42rem;
+    margin-right: .27rem
+}
+
+.payName {
+    font-size: .3rem;
+    color: #2e2e2d
+}
+
+.payDesc {
+    margin-left: .24rem;
+    height: .4rem;
+    border: .02rem solid red;
+    border-radius: .02rem;
+    padding: 0 .16rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .24rem;
+    font-weight: 500;
+    color: red
+}
+
+.check {
+    width: .42rem;
+    height: .42rem
+}
+
+.tip-01 {
+    display: flex;
+    font-size: .25rem;
+    color: #aaa
+}
+
+.tip-01 img {
+    width: .3rem;
+    height: .34rem;
+    margin-right: .2rem
+}
+
+.tip-02 {
+    font-size: .32rem;
+    color: #353535;
+    margin-bottom: .2rem
+}
+
+.tip-02>p {
+    padding: .1rem 0
+}
+
+.tip-02>p>.blue {
+    color: #2787ff;
+    font-weight: 700
+}
+
+.model2 {
+    position: relative;
+    margin: 0 .2rem;
+    background: #fff;
+    border-radius: .2rem;
+    padding: .3rem .18rem .44rem
+}
+
+.model2-title {
+    font-size: .3rem;
+    text-align: center;
+    font-weight: 700;
+    color: #000
+}
+
+.tips {
+    margin: .3rem 0;
+    padding: .3rem .22rem .5rem .22rem;
+    background: #f8f8f8;
+    border-radius: .1rem;
+    font-size: .26rem;
+    color: #717171;
+    line-height: .44rem
+}
+
+.bot-text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .24rem;
+    color: #717171
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+.textphone {
+    height: .64rem;
+    line-height: .64rem;
+    width: 100%;
+    border: none;
+    font-size: .5rem;
+    font-weight: 500;
+    color: #676568
+}
+
+.pay-btn-tips-content {
+    position: absolute;
+    height: .3rem;
+    line-height: .3rem;
+    padding: 0 .1rem;
+    background: #f0440f;
+    color: #fff;
+    font-size: .12rem;
+    border-radius: .1rem .1rem .1rem 0;
+    top: -.1rem;
+    right: 3%
+}
+
+.xieyi {
+    font-size: .26rem;
+    margin-top: .4rem;
+    text-align: center
+}
+
+.xieyi a,
+.xieyi a :hover {
+    color: #4f82ee
+}
