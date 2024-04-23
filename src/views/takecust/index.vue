@@ -2,7 +2,7 @@
  * @Author: a3802 253092329@qq.com
  * @Date: 2024-04-11 19:09:51
  * @LastEditors: a3802 253092329@qq.com
- * @LastEditTime: 2024-04-22 06:20:20
+ * @LastEditTime: 2024-04-24 04:36:38
  * @FilePath: \tgvue\src\views\takecust\index.vue
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
@@ -112,6 +112,26 @@ export default {
 
     });
 
+
+
+            // 取url中的参数值
+    const getQuery = (name) => {
+        let geturl = window.location.href
+        let getqyinfo = geturl.split('?')[1]
+        let params = new URLSearchParams('?' + getqyinfo);
+        return params.get(name);
+    };
+
+
+    onMounted(() => {
+
+       order_sn.value = getQuery('sn');
+
+       Toast('支付成功,请领取话费包');
+
+
+    });
+
     const redirect = (str) => {
       console.log(str);
         if(str == 'takecust'){
@@ -121,15 +141,7 @@ export default {
         }else{
             Toast('系统错误');
         }
-    };
-
-            // 取url中的参数值
-    const getQuery = (name) => {
-        let geturl = window.location.href
-        let getqyinfo = geturl.split('?')[1]
-        let params = new URLSearchParams('?' + getqyinfo);
-        return params.get(name);
-    };
+    };    
 
     const handleItemClick = (value,key) => {
 
@@ -199,12 +211,7 @@ export default {
       showDialog.value = false; // 关闭对话框
     };
 
-    onMounted(() => {
 
-       order_sn.value = getQuery('sn');
-
-
-    });
 
 
     return {

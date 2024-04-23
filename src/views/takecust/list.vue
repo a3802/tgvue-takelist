@@ -78,15 +78,7 @@ export default {
             
         });
 
-        const redirect = (str) => {
-            if(str == 'takecust'){
-                router.push('/takecust?sn='+order.order_sn);
-            }else if( str == 'list'){
-                router.push('/takecust/list?sn='+order.order_sn);
-            }else{
-                Toast('系统错误');
-            }
-        };
+
 
         // 取url中的参数值
         const getQuery = (name) => {
@@ -119,6 +111,19 @@ export default {
 
 
         })
+
+
+        const redirect = (str) => {
+            if(str == 'takecust'){
+                router.push('/takecust?sn='+order.form.order_sn);
+            }else if( str == 'list'){
+                router.push('/takecust/list?sn='+order.form.order_sn);
+            }else{
+                Toast('系统错误');
+            }
+        };
+
+
 
         return {
             icon,
