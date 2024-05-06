@@ -195,10 +195,10 @@ export default {
                   return result;
               } else {
                   // Toast(result.message);
-                  Toast('充值失败');
+                  Toast('充值处理中，请耐心等待');
               }
           }).catch(err => {
-              Toast('充值失败');
+              Toast('充值进行中，请耐心等待');
 
           })
     };
